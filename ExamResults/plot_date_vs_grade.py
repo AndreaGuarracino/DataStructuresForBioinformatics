@@ -47,14 +47,32 @@ data = pd.concat(dfs, ignore_index=True)
 # Sort by Date
 data = data.sort_values(by='Date')
 
-# Plotting the boxplot for all grades on the same date
-plt.figure(figsize=(12,6))
-sns.boxplot(x='Date', y='Grade', data=data, color="lightgray")
-sns.swarmplot(x='Date', y='Grade', data=data, color="black", size=4) # Add points
-plt.title('Grades over time')
-plt.xlabel('Date')
-plt.ylabel('Grade')
-plt.xticks(rotation=45)
+# Set the style for the plot
+sns.set_style("whitegrid")
+plt.figure(figsize=(20, 12))
+
+# Create the boxplot
+sns.boxplot(x='Date', y='Grade', data=data, color="lightblue", width=0.5)
+
+# Add swarmplot for individual data points
+sns.swarmplot(x='Date', y='Grade', data=data, color="navy", size=6, alpha=0.6)
+
+# Customize the plot
+plt.title('Data Structures for Bioinformatics Exam\nDistribution of Grades Over Time', fontsize=28, pad=20)
+plt.xlabel('Exam Date', fontsize=24, labelpad=15)
+plt.ylabel('Grade', fontsize=24, labelpad=15)
+plt.xticks(rotation=45, ha='right', fontsize=20)
+plt.yticks(fontsize=20)
+
+# Increase tick label size
+plt.tick_params(axis='both', which='major', labelsize=20)
+
+# Add a horizontal line for the mean grade
+mean_grade = data['Grade'].mean()
+plt.axhline(y=mean_grade, color='red', linestyle='--', alpha=0.7, linewidth=2)
+plt.text(plt.xlim()[1], mean_grade, f' Mean: {mean_grade:.2f}', 
+         verticalalignment='center', fontsize=20, color='red', fontweight='bold')
+
+# Adjust the layout and display the plot
 plt.tight_layout()
 plt.show()
-
