@@ -2,8 +2,9 @@
 
 Material for the **Data Structures for Bioinformatics** course (Master’s degree in Bioinformatics, University of Rome Tor Vergata).
 
-**Class schedule (2025/2026)**: every Friday, 16-18 pm (GMT+2)
+**Class schedule (2026/2027)**: every Thursday, 16-18 pm (GMT+2)
 
+<!-- **Class schedule (2025/2026)**: every Friday, 16-18 pm (GMT+2) -->
 <!--**Class schedule (2024/2025)**: every Thursday, 15-17 pm (GMT+2)-->
 <!--**Class schedule (2023/2024)**: every Thursday, 15-17 pm (GMT+2)-->
 <!--**Class schedule (2022/2023)**: every Tuesday, 15-17 pm (GMT+2)-->
