@@ -1,0 +1,6 @@
+transcript_id	biotype	bp	aa
+ENST00000352993.7	Protein coding	3668	721
+ENST00000354071.7	Protein coding	4497	1399
+ENST00000461221.5	Nonsense mediated decay	5693	63
+ENST00000461574.1	Protein coding	726	242
+ENST00000461798.5	Nonsense mediated decay	582	63
